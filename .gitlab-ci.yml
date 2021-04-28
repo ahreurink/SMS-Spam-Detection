@@ -1,0 +1,14 @@
+image: python:latest
+ 
+building:
+  stage: build
+  script: 
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+    python src/read_data.py
+    python src/text_preprocessing.py
+    python src/text_classification.py
+
+    python src/serve_model.py
