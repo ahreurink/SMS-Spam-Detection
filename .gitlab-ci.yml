@@ -1,7 +1,18 @@
 image: python:latest
+
+docker: 
+  image: docker:20.10.6
+  services: ['docker;20.10.6-dind']##dind??
+  
+  before_script:
+  
+
+  script:
+
  
 building:
   stage: build
+
   script: 
     python -m venv venv
     source venv/bin/activate
