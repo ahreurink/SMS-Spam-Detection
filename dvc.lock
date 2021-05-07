@@ -4,8 +4,8 @@ stages:
     cmd: python src/get_data.py
     deps:
     - path: src/get_data.py
-      md5: 9cb5b827c00430551552885e6ae2ec0b
-      size: 393
+      md5: 1e0654cef28ba15d1c71473b58f0c5fd
+      size: 479
     outs:
     - path: dataset
       md5: 98c8e6651ea0eec3c8dc40aa13dc0760.dir
@@ -39,11 +39,11 @@ stages:
       size: 160189
     outs:
     - path: output/accuracy_scores.png
-      md5: 307236d99f1a27fd67ab712395265687
-      size: 23892
+      md5: 2926ed1e60f1716344ad3af5c93b28f7
+      size: 23909
     - path: output/misclassified_msgs.txt
-      md5: 3be89c9629a480843e72a85d73f67eeb
-      size: 47260
+      md5: 2b5b1c5471f945c25253750dbc5d1d68
+      size: 47296
     - path: output/model.joblib
-      md5: cbac787663dae210d97d5a345f26db2c
-      size: 9746
+      md5: f386ec7394c7f649e96666f488eb4b7e
+      size: 9890
