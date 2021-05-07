@@ -4,8 +4,8 @@ stages:
     cmd: python src/get_data.py
     deps:
     - path: src/get_data.py
-      md5: 1e0654cef28ba15d1c71473b58f0c5fd
-      size: 479
+      md5: 9cb5b827c00430551552885e6ae2ec0b
+      size: 393
     outs:
     - path: dataset
       md5: 98c8e6651ea0eec3c8dc40aa13dc0760.dir
