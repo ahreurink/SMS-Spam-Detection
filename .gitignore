@@ -11,3 +11,4 @@ output
 .bash_history
 .cache/
 dataset/
+/dataset

@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  get_data:
+    cmd: python src/get_data.py
+    deps:
+    - path: src/get_data.py
+      md5: 2547a26267153a707b083e0d88a2291d
+      size: 388
+    outs:
+    - path: dataset
+      md5: 69700dc670a2d86190d82ac79154445a.dir
+      size: 433355
+      nfiles: 3
