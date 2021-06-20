@@ -4,46 +4,46 @@ stages:
     cmd: python src/get_data.py
     deps:
     - path: src/get_data.py
-      md5: 9cb5b827c00430551552885e6ae2ec0b
-      size: 393
+      md5: 17728d99a5db4501ffec7918a1dc370c
+      size: 398
     outs:
     - path: dataset
-      md5: 98c8e6651ea0eec3c8dc40aa13dc0760.dir
-      size: 518973
+      md5: 5a84bb806c75cbc704c9fb17e1ba8e44.dir
+      size: 604940
       nfiles: 3
   preprocess_text:
     cmd: python src/text_preprocessing.py
     deps:
     - path: dataset
-      md5: 98c8e6651ea0eec3c8dc40aa13dc0760.dir
-      size: 518973
+      md5: 5a84bb806c75cbc704c9fb17e1ba8e44.dir
+      size: 604940
       nfiles: 3
     - path: src/text_preprocessing.py
       md5: 353f5a9f6787a4e399c070ad29a10cbb
       size: 2590
     outs:
     - path: output/preprocessed_data.joblib
-      md5: 718e815da2f29c20c409f611003ff2fd
-      size: 251361
+      md5: ff8bc50be73926c6144a21df29e8c526
+      size: 374977
     - path: output/preprocessor.joblib
-      md5: b8f9b6442d120c1f9716e6a79267176f
-      size: 160189
+      md5: 48bf8d5f81621cb90510a6ad037b6f5f
+      size: 202864
   train:
     cmd: python src/text_classification.py
     deps:
     - path: output/preprocessed_data.joblib
-      md5: 718e815da2f29c20c409f611003ff2fd
-      size: 251361
+      md5: ff8bc50be73926c6144a21df29e8c526
+      size: 374977
     - path: output/preprocessor.joblib
-      md5: b8f9b6442d120c1f9716e6a79267176f
-      size: 160189
+      md5: 48bf8d5f81621cb90510a6ad037b6f5f
+      size: 202864
     outs:
     - path: output/accuracy_scores.png
-      md5: 2926ed1e60f1716344ad3af5c93b28f7
-      size: 23909
+      md5: ff9161c3e62608bbbc33bc795a5b151c
+      size: 23992
     - path: output/misclassified_msgs.txt
-      md5: 2b5b1c5471f945c25253750dbc5d1d68
-      size: 47296
+      md5: d625dd9713210e074ce47f61db91e498
+      size: 64315
     - path: output/model.joblib
-      md5: f386ec7394c7f649e96666f488eb4b7e
-      size: 9890
+      md5: 386dad2aec232ad6c095eb27ffa034a4
+      size: 11330
