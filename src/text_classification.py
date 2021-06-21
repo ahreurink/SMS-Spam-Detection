@@ -1,5 +1,7 @@
 """
 Train the model using different algorithms.
+Creates 3 files in output: `accuracy_scores.png`,
+`model.joblib`, and `misclassified_msgs.txt`.
 """
 
 import pandas as pd
@@ -15,7 +17,6 @@ import matplotlib
 import matplotlib.pyplot as plt
 from text_preprocessing import _load_data
 
-matplotlib.use('TkAgg')
 pd.set_option('display.max_colwidth', None)
 
 

@@ -7,3 +7,8 @@ __pycache__/
 *.html
 venv
 output
+
+.bash_history
+.cache/
+dataset/
+/dataset

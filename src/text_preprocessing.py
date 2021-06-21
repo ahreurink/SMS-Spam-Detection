@@ -1,5 +1,6 @@
 """
 Preprocess the data to be trained by the learning algorithm.
+Creates files `preprocessor.joblib` and `preprocessed_data.joblib`
 """
 
 import pandas as pd
@@ -18,7 +19,7 @@ from joblib import dump, load
 
 def _load_data():
     messages = pd.read_csv(
-        'smsspamcollection/SMSSpamCollection',
+        'dataset/SMSSpamCollection',
         sep='\t',
         names=['label', 'message']
     )

@@ -6,3 +6,7 @@ matplotlib==3.4.1
 scikit-learn==0.24.1
 Flask==1.1.2
 flasgger
+
+dvc==2.1.0
+dvc[gdrive]
+mllint
